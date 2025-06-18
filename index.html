@@ -108,7 +108,7 @@
       }
 
       if (!userId.startsWith("12")) {
-        document.getElementById("errorMessage").innerText = "You need to create new account and top up 200 KES. Use MOMO35 promo code to take bonuses from me";
+        document.getElementById("errorMessage").innerText = "You need to create a new account and top up 200 KES. Use promo code MOMO35 to get bonuses from me.";
         document.getElementById("submitBtn").classList.add("hidden");
         document.getElementById("createAccountBtn").classList.remove("hidden");
         return;
@@ -122,7 +122,7 @@
       const min = 1.01;
       const max = 5.0;
       const randomCoef = (Math.random() * (max - min) + min).toFixed(2);
-      document.getElementById('result').innerText = 💥 ${randomCoef}x;
+      document.getElementById('result').innerText = `💥 ${randomCoef}x`;
     }
   </script>
 </body>
